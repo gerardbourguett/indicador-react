@@ -46,7 +46,8 @@ function App() {
         <h1 className="text-3xl font-bold">Indicadores Económicos</h1>
         <div className="">
           <h3 className="text-state-900 mt-5 text-base font-medium tracking-tight">
-            Fecha de Actualización: {formatFecha}
+            Fecha de Actualización: {formatFecha}. Información obtenida de
+            https://mindicador.cl
           </h3>
         </div>
         <div className="grid grid-cols-3 gap-4">
