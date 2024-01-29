@@ -27,7 +27,6 @@ function App() {
         second: "2-digit",
       }).format(fecha);
       setFormatFecha(formatoFecha);
-      console.log(formatFecha);
     } catch (error) {
       console.error("Error de red:", error);
     }
@@ -50,14 +49,10 @@ function App() {
             Fecha de Actualización: {formatFecha}
           </h3>
         </div>
-        <div className="">
-          <div className="flex items-center space-x-4">
-            <div className="flex-1 p-4">
-              <Card indicador={indicador} onButtonClick={handleButtonClick} />
-            </div>
-          </div>
+        <div className="grid grid-cols-3 gap-4">
+          <Card indicador={indicador} onButtonClick={handleButtonClick} />
+          <Grafico codigoIndi={codigoIndicador} />
         </div>
-        {codigoIndicador && <Grafico codigoIndi={codigoIndicador} />}
       </div>
     </>
   );

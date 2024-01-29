@@ -21,7 +21,7 @@ const Card = ({ indicador, onButtonClick }) => {
     <div>
       {indicador && (
         <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+          <div className="grid grid-cols-3 gap-4">
             {Object.keys(indicador).map((key) => {
               return (
                 indicador[key].valor && (
